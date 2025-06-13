@@ -1,19 +1,38 @@
+"use client";
+import Link from "next/link";
+import { useState } from "react";
+
 export default function Navbar() {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const navItems = [
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Projects", href: "/projects" },
+    { name: "Contact", href: "/contact" },
+  ];
   return (
-    <nav className="fixed mt-[30px] top-0 left-1/2 z-50 w-[400px] -translate-x-1/2 bg-white/10 backdrop-blur-md shadow-lg rounded-full">
-      <ul className="grid grid-cols-4 items-center justify-center py-2 border border-white/10 bg-transparent rounded-full text-white">
-        <li className="px-4 py-2 text-center cursor-pointer">
-          <a href="/">Home</a>
-        </li>
-        <li className="px-4 py-2 text-center cursor-pointer">
-          <a href="/about">About</a>
-        </li>
-        <li className="px-4 py-2 text-center cursor-pointer">
-          <a href="/projects">Projects</a>
-        </li>
-        <li className="px-4 py-2 text-center cursor-pointer">
-          <a href="mailto:contact@rafaelamaral.dev">Contact</a>
-        </li>
+    <nav className="fixed top-[30px] left-1/2 z-50 -translate-x-1/2 animate-jump-in animate-once animate-duration-1000">
+      <ul
+        className="relative grid grid-cols-4 items-center justify-center py-2 border border-white/10 backdrop-blur-md bg-white/10 rounded-full shadow-lg transition-all duration-200 ease-in-out w-[90vw] max-w-[400px] text-neutral-300"
+        onMouseLeave={() => setActiveIndex(null)}
+      >
+        {activeIndex !== null && (
+          <div
+            className="absolute top-0 h-full w-1/4 bg-white/10 rounded-full transition-all duration-300"
+            style={{ left: `${activeIndex * 25}%` }}
+          ></div>
+        )}
+        {navItems.map((item, index) => (
+          <li
+            key={item.name}
+            onMouseEnter={() => setActiveIndex(index)}
+            className="relative z-10 px-2 md:px-4 text-center py-2 rounded-full cursor-pointer transition-colors duration-300 hover:text-white"
+          >
+            <Link href={item.href} className="relative z-20">
+              {item.name}
+            </Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );

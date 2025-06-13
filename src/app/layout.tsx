@@ -1,7 +1,4 @@
-// app/layout.tsx (Next.js App Router layout file)
-
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "./components/Navbar";
 import "./globals.css";
 
@@ -19,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        {children}
+        <div className="pt-[100px]">{children}</div>
       </body>
     </html>
   );
