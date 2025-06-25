@@ -57,6 +57,7 @@ const Footer = () => {
                   GitHub
                 </a>
               </li>
+
               <li>
                 <a
                   href="https://www.instagram.com/4nglp/"
@@ -65,6 +66,36 @@ const Footer = () => {
                   rel="noopener noreferrer"
                 >
                   Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://api.whatsapp.com/send/?phone=212687798652&text&type=phone_number&app_absent=0"
+                  className="hover:underline hover:text-neutral-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Whatsapp
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://discordid.netlify.app/?id=348869585258414081"
+                  className="hover:underline hover:text-neutral-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Discord
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/4nglp"
+                  className="hover:underline hover:text-neutral-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter
                 </a>
               </li>
             </ul>
