@@ -34,7 +34,7 @@ const ExperienceEducationSection = () => {
       period: "Sep 2019 - Jul 2022",
       title: "Lycée Mokhtar Essoussi",
       subtitle: "Baccalauréat Sciences Phusique et Chimie ",
-      description: "Graduated with a honors (montion bien) ",
+      description: "Graduated with honors (montion bien) ",
       logo: soussi,
       bgColor: "bg-green-600",
     },
@@ -56,7 +56,7 @@ const ExperienceEducationSection = () => {
   const currentData = activeTab === "education" ? studiesData : workData;
 
   return (
-    <div className="min-h-screen bg-black text-white py-4 px-3">
+    <div className="bg-black text-white py-4 px-3">
       <section className="pt-6 mx-auto container max-w-2xl px-3 md:px-0 md:pt-12 z-50">
         <p className="text-lg font-light text-white mb-4 tracking-widest text-left">
           Experience & Education
@@ -69,7 +69,7 @@ const ExperienceEducationSection = () => {
             role="tab"
             aria-selected={activeTab === "experience"}
             onClick={() => setActiveTab("experience")}
-            className={`inline-flex items-center justify-center whitespace-nowrap rounded-md px-2 py-1 text-xs sm:text-sm font-medium transition-all ${
+            className={`inline-flex items-center justify-center whitespace-nowrap rounded-md px-2 py-1 text-xs sm:text-sm font-medium transition-all  hover:cursor-pointer ${
               activeTab === "experience"
                 ? "bg-white text-black"
                 : "text-white hover:text-white/80"
@@ -81,7 +81,7 @@ const ExperienceEducationSection = () => {
             role="tab"
             aria-selected={activeTab === "education"}
             onClick={() => setActiveTab("education")}
-            className={`inline-flex items-center justify-center whitespace-nowrap rounded-md px-2 py-1 text-xs sm:text-sm font-medium transition-all ${
+            className={`inline-flex items-center justify-center whitespace-nowrap rounded-md px-2 py-1 text-xs sm:text-sm font-medium transition-all  hover:cursor-pointer ${
               activeTab === "education"
                 ? "bg-white text-black"
                 : "text-white hover:text-white/80"
@@ -112,14 +112,14 @@ const ExperienceEducationSection = () => {
                 </div>
                 <div className="flex flex-col gap-1 text-white">
                   <time className="text-xs text-white/60">{item.period}</time>
-                  <h2 className="font-semibold leading-none text-xs sm:text-sm">
+                  <h2 className="font-bold leading-none text-xs sm:text-sm">
                     {item.title}
                   </h2>
                   <p className="text-xs text-white/70 sm:text-2sm">
                     {item.subtitle}
                   </p>
                   {item.description && (
-                    <p className="text-xs text-white/80 leading-relaxed">
+                    <p className="text-xs text-white font-bold leading-relaxed">
                       {item.description}
                     </p>
                   )}

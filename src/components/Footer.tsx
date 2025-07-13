@@ -41,7 +41,7 @@ const Footer = () => {
             <ul className="flex flex-col text-neutral-500 font-light">
               <li>
                 <a
-                  href="mailto:abdechakouromari@gmail.dev"
+                  href="mailto:abdechakouromari@gmail.com"
                   className="hover:underline hover:text-neutral-300"
                 >
                   Email
