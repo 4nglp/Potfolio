@@ -1,11 +1,12 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Your Site Title",
-  description: "Your site description",
+  title: "Abdechakour's Portfolio",
+  description: "A portfolio showcasing my work, projects and skills",
 };
 
 export default function RootLayout({
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         <div>{children}</div>
+        <Analytics />
         <Footer />
       </body>
     </html>
