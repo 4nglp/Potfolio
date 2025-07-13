@@ -40,7 +40,7 @@ const Main = () => {
       </header>
 
       <main className="flex justify-center px-4 mt-1">
-        <h2 className="font-bold text-center text-5xl xs:text-5xl sm:text-7xl">
+        <h2 className="font-bold text-center text-5xl xs:text-5xl sm:text-8xl">
           FULLSTACK <br /> DEVELOPER
         </h2>
       </main>
