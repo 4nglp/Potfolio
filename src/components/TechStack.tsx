@@ -23,38 +23,43 @@ import {
   SiHtml5,
   SiCss3,
   SiBootstrap,
+  SiUml,
+  SiJira,
+  SiDocker,
 } from "react-icons/si";
-
 const techStack = [
   { name: "HTML", Icon: SiHtml5 },
   { name: "CSS", Icon: SiCss3 },
-  { name: "Bootstrap", Icon: SiBootstrap },
   { name: "Javascript", Icon: SiJavascript },
   { name: "Typescript", Icon: SiTypescript },
-  { name: "PHP", Icon: SiPhp },
   { name: "Python", Icon: SiPython },
+  { name: "PHP", Icon: SiPhp },
+  { name: "Laravel", Icon: SiLaravel },
   { name: "React", Icon: SiReact },
-  { name: "Expo", Icon: SiExpo },
+  { name: "Electron", Icon: SiElectron },
   { name: "Next.js", Icon: SiNextdotjs },
   { name: "Node.js", Icon: SiNodedotjs },
   { name: "Express", Icon: SiExpress },
+  { name: "Expo", Icon: SiExpo },
   { name: "Tailwind CSS", Icon: SiTailwindcss },
+  { name: "Bootstrap", Icon: SiBootstrap },
+  { name: "Prisma", Icon: SiPrisma },
   { name: "MySQL", Icon: SiMysql },
   { name: "PostgreSQL", Icon: SiPostgresql },
   { name: "MongoDB", Icon: SiMongodb },
-  { name: "Laravel", Icon: SiLaravel },
   { name: "Firebase", Icon: SiFirebase },
-  { name: "Prisma", Icon: SiPrisma },
   { name: "Postman", Icon: SiPostman },
-  { name: "Electron", Icon: SiElectron },
   { name: "Git", Icon: SiGit },
   { name: "GitHub", Icon: SiGithub },
+  { name: "UML", Icon: SiUml },
+  { name: "Jira", Icon: SiJira },
+  { name: "Docker", Icon: SiDocker },
 ];
 
 export default function TechStack() {
   return (
     <div className="bg-black text-white py-4 px-3">
-      <section className="pt-6 mx-auto container max-w-2xl px-3 md:px-0 md:pt-12 z-50">
+      <section className="pt-6 mx-auto container max-w-3xl px-3 md:px-0 md:pt-12 z-50">
         <p className="text-lg font-light text-white mb-4 tracking-widest text-left">
           Tech Stack
         </p>

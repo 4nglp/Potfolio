@@ -4,12 +4,18 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
   const navItems = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Projects", href: "/projects" },
-    { name: "Contact", href: "/contact" },
+    {
+      name: "Contact",
+      href: "mailto:abdechakouromari@gmail.com",
+      external: true,
+    },
   ];
+
   return (
     <nav className="fixed top-[30px] left-1/2 z-50 -translate-x-1/2 animate-jump-in animate-once animate-duration-1000">
       <ul
@@ -22,15 +28,22 @@ export default function Navbar() {
             style={{ left: `${activeIndex * 25}%` }}
           ></div>
         )}
+
         {navItems.map((item, index) => (
           <li
             key={item.name}
             onMouseEnter={() => setActiveIndex(index)}
             className="relative z-10 px-2 md:px-4 text-center py-2 rounded-full cursor-pointer transition-colors duration-300 hover:text-white"
           >
-            <Link href={item.href} className="relative z-20">
-              {item.name}
-            </Link>
+            {item.external ? (
+              <a href={item.href} className="relative z-20">
+                {item.name}
+              </a>
+            ) : (
+              <Link href={item.href} className="relative z-20">
+                {item.name}
+              </Link>
+            )}
           </li>
         ))}
       </ul>

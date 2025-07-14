@@ -21,7 +21,7 @@ const ExperienceEducationSection = () => {
     },
     {
       id: 2,
-      period: "Sep 2022 - Jul 2022",
+      period: "Sep 2022 - Jul 2023",
       title: "Faculté des Sciences Ben M'sik",
       subtitle: "S1 & S2 in SMP (Sciences de la Matière Physique)",
       description:
@@ -47,7 +47,7 @@ const ExperienceEducationSection = () => {
       title: "ISTA Ben M'sik",
       subtitle: "Fullstack Developer Intern",
       description:
-        "Built an entre desktop application using Electron.js to manage the interns' absence and their discipline note, and helped with the ui and the auth of the mobile version.",
+        "Built an entre desktop application using Electron.js to manage the interns' absence and their discipline note and helped with the UI and the auth of the mobile version.",
       logo: istabm,
       bgColor: "bg-cyan-600",
     },
@@ -57,7 +57,7 @@ const ExperienceEducationSection = () => {
 
   return (
     <div className="bg-black text-white py-4 px-3">
-      <section className="pt-6 mx-auto container max-w-2xl px-3 md:px-0 md:pt-12 z-50">
+      <section className="pt-6 mx-auto container max-w-3xl px-3 md:px-0 md:pt-12 z-50">
         <p className="text-lg font-light text-white mb-4 tracking-widest text-left">
           Experience & Education
         </p>
