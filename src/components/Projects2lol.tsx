@@ -7,7 +7,7 @@ import reimi_v2 from "../../public/assets/projects/reimi_v2.png";
 import portfolio from "../../public/assets/projects/portfolio.png";
 import sas_desk from "../../public/assets/projects/sas_desk.png";
 
-export default function Projects() {
+export default function Projects2() {
   const data = [
     {
       id: 1,
@@ -58,7 +58,7 @@ export default function Projects() {
       status: "In development",
       img: portfolio,
       for: "Personal",
-      technologies: ["Next.js", "React", "TypeScript", "Twailwind CSS"],
+      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
       repo: "https://github.com/4nglp/Potfolio",
       web: "https://4nglp-portfoio.vercel.app/",
     },
@@ -90,11 +90,6 @@ export default function Projects() {
           <p className="text-lg font-light text-white tracking-widest">
             Projects
           </p>
-          <Link href="/projects">
-            <button className="text-neutral-400 hover:text-white transition-colors text-sm hover:cursor-pointer">
-              View More
-            </button>
-          </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {data.map((project) => (
