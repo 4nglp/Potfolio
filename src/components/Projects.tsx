@@ -11,26 +11,6 @@ export default function Projects() {
   const data = [
     {
       id: 1,
-      title: "Reimi",
-      ref: "reimi",
-      description:
-        "A next js web app for reading manga online using manga dex api and anilist graphql api.",
-      status: "On hold",
-      img: reimi,
-      for: "Testing and learning purposes",
-      technologies: [
-        "Next.js",
-        "React",
-        "JavaScript",
-        "Tailwind CSS",
-        "MangaDex API",
-        "Anilist GraphQL API",
-      ],
-      repo: "https://github.com/4nglp/Reimi",
-      web: "https://reimi.vercel.app/",
-    },
-    {
-      id: 2,
       title: "ReimiV2",
       ref: "reimi_v2",
       description:
@@ -50,7 +30,7 @@ export default function Projects() {
       download: "https://github.com/4nglp/ReimiV2/releases/tag/v0.0.2",
     },
     {
-      id: 3,
+      id: 2,
       title: "Pesonal Portfolio",
       ref: "portfolio",
       description:
@@ -61,6 +41,26 @@ export default function Projects() {
       technologies: ["Next.js", "React", "TypeScript", "Twailwind CSS"],
       repo: "https://github.com/4nglp/Potfolio",
       web: "https://4nglp-portfoio.vercel.app/",
+    },
+    {
+      id: 3,
+      title: "Reimi",
+      ref: "reimi",
+      description:
+        "A next js web app for reading manga online using manga dex api and anilist graphql api.",
+      status: "On hold",
+      img: reimi,
+      for: "Testing and learning purposes",
+      technologies: [
+        "Next.js",
+        "React",
+        "JavaScript",
+        "Tailwind CSS",
+        "MangaDex API",
+        "Anilist GraphQL API",
+      ],
+      repo: "https://github.com/4nglp/Reimi",
+      web: "https://reimi.vercel.app/",
     },
     {
       id: 4,

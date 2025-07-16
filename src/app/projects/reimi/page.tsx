@@ -45,13 +45,34 @@ const Reimi = () => {
   return (
     <div className="bg-black text-white px-6">
       <section className="min-h-screen flex flex-col justify-center items-center text-center max-w-4xl mx-auto py-16">
-        <h1 className="font-bold text-5xl mb-6">Reimi</h1>
-        <p className="font-light tracking-widest text-lg leading-relaxed text-left">
+        <h1 className="font-bold text-4xl sm:text-5xl mb-6">Reimi</h1>
+        <p className="font-light tracking-widest text-base sm:text-lg leading-relaxed text-left">
           One of the first projects I built using Next.js. Through it, I learned
           how to work with both RESTful and GraphQL APIs, and gained
           foundational experience in project structuring with Next.js. Although
           mobile responsiveness was never completed, this project marked a
           meaningful step forward in my development journey.
+          <br />
+          <br />
+          You can explore the project on GitHub:{" "}
+          <a
+            href="https://github.com/4nglp/Reimi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-400 hover:text-blue-300"
+          >
+            https://github.com/4nglp/Reimi
+          </a>
+          <br />
+          Or try the live version here:{" "}
+          <a
+            href="https://reimi.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-400 hover:text-blue-300"
+          >
+            https://reimi.vercel.app
+          </a>
         </p>
       </section>
       <section className="min-h-screen flex flex-col items-center gap-16 max-w-4xl mx-auto py-12">
@@ -60,18 +81,18 @@ const Reimi = () => {
             key={id}
             className="w-full p-6 rounded-2xl shadow-md hover:shadow-lg transition duration-300"
           >
-            <h2 className="text-2xl font-semibold mb-4">{title}</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold mb-4">{title}</h2>
             <Image
               alt={title}
               className="w-full rounded-md mb-4"
               placeholder="blur"
               src={img}
             />
-            <p className="text-lg font-light">{desc}</p>
+            <p className="text-base sm:text-lg font-light">{desc}</p>
           </div>
         ))}
       </section>
-      <section className="py-12 text-center">
+      <section className="py-12 text-left">
         <p className="text-white text-md italic max-w-3xl mx-auto pt-6">
           {notice}
         </p>
