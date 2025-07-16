@@ -169,22 +169,17 @@ const ReimiV2 = () => {
       <section className="min-h-screen flex flex-col justify-center items-center text-center max-w-4xl mx-auto py-16">
         <h1 className="font-bold text-4xl sm:text-5xl mb-6">ReimiV2</h1>
         <p className="font-light tracking-widest text-base sm:text-lg leading-relaxed text-left">
-          Reimi V2 is one of my favorite and most meaningful projects—built out
-          of passion, dedication, and a genuine love for anime and manga. I
-          spent the majority of last year working on it non-stop, crafting it
-          into a full-featured Electron.js application designed primarily for
-          watching anime and reading manga, with a strong focus on Arabic
-          content. It uses web scraping techniques to gather data from various
-          sources and includes unique features developed for a smooth and
-          enjoyable user experience. Library entries and categories are managed
-          entirely on the client side using localStorage. Reimi V2 has even been
-          used by close friends, making it all the more rewarding. Beyond its
-          technical scope, it represents a creative journey where learning met
-          fun.
+          Reimi V2 is one of my most meaningful projects—built with passion and
+          a deep love for anime and manga. Over the past year, I developed it as
+          a full-featured Electron.js app focused on Arabic content, allowing
+          users to watch anime and read manga through custom web scraping.
+          Features like library management and categories are handled
+          client-side using localStorage. Used by friends and constantly
+          evolving, Reimi V2 has been a rewarding learning experience.
           <br />
           <br />
-          The app is still under active development, but a beta version (v0.0.2)
-          is available for download on GitHub:{" "}
+          The app is still in development, but you can try the beta (v0.0.2) via
+          GitHub:{" "}
           <a
             href="https://github.com/4nglp/ReimiV2/releases/tag/v0.0.2"
             target="_blank"
