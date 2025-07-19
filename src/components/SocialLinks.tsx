@@ -120,7 +120,7 @@ duration-500 hover:scale-105 hover:-rotate-12 hover:cursor-pointer";
         </button>
       </a>
       <a
-        href="/documents/abdechakour-omari-cv.pdf"
+        href="/documents/abdechakour_omari_cv.pdf"
         target="_blank"
         rel="noopener noreferrer"
       >
