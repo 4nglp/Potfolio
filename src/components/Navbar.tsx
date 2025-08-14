@@ -17,7 +17,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-[30px] left-1/2 z-50 -translate-x-1/2 animate-jump-in animate-once animate-duration-1000">
+    <nav className="fixed top-[30px] left-1/2 z-50 -translate-x-1/2 animate-in fade-in zoom-in-50 duration-700">
       <ul
         className="relative grid grid-cols-4 items-center justify-center py-2 border border-white/10 backdrop-blur-md bg-white/10 rounded-full shadow-lg transition-all duration-200 ease-in-out w-[90vw] max-w-[400px] text-neutral-300"
         onMouseLeave={() => setActiveIndex(null)}

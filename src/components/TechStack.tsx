@@ -4,6 +4,7 @@ import {
   SiTypescript,
   SiPhp,
   SiPython,
+  SiC,
   SiReact,
   SiNextdotjs,
   SiNodedotjs,
@@ -27,12 +28,16 @@ import {
   SiJira,
   SiDocker,
 } from "react-icons/si";
+import { FaJava } from "react-icons/fa6";
+
 const techStack = [
   { name: "HTML", Icon: SiHtml5 },
   { name: "CSS", Icon: SiCss3 },
   { name: "Javascript", Icon: SiJavascript },
   { name: "Typescript", Icon: SiTypescript },
   { name: "Python", Icon: SiPython },
+  { name: "C", Icon: SiC },
+  { name: "Java", Icon: FaJava },
   { name: "PHP", Icon: SiPhp },
   { name: "Laravel", Icon: SiLaravel },
   { name: "React", Icon: SiReact },

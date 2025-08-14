@@ -11,11 +11,11 @@ const ExperienceEducationSection = () => {
   const studiesData = [
     {
       id: 1,
-      period: "Sep 2023 - Jul. 2025",
+      period: "Sep 2023 - Jul 2025",
       title: "ISTA Ben M'sik",
-      subtitle: "Diplome technicien spécialisé en developpement digital",
+      subtitle: "Diplôme Technicien Spécialisé en Développement Digital",
       description:
-        "Classed the 3rd in my class and participated in the 2nd edition of ISGI Hackathon.",
+        "Ranked 3rd in class and participated in the 2nd edition of the ISGI Hackathon.",
       logo: istabm,
       bgColor: "bg-gray-700",
     },
@@ -25,7 +25,7 @@ const ExperienceEducationSection = () => {
       title: "Faculté des Sciences Ben M'sik",
       subtitle: "S1 & S2 in SMP (Sciences de la Matière Physique)",
       description:
-        "Passed the S1 realized that I ain't built for physics then decided to switch to IT.",
+        "Completed S1 before deciding to pivot from physics to pursue a career in IT.",
       logo: fsbm,
       bgColor: "bg-blue-600",
     },
@@ -33,8 +33,9 @@ const ExperienceEducationSection = () => {
       id: 3,
       period: "Sep 2019 - Jul 2022",
       title: "Lycée Mokhtar Essoussi",
-      subtitle: "Baccalauréat Sciences Phusique et Chimie ",
-      description: "Graduated with honors (montion bien) ",
+      subtitle: "Baccalauréat Sciences Physiques et Chimie",
+      description:
+        "Earned a high school diploma in Physics and Chemistry (Mention assez bien).",
       logo: soussi,
       bgColor: "bg-green-600",
     },
@@ -47,7 +48,7 @@ const ExperienceEducationSection = () => {
       title: "ISTA Ben M'sik",
       subtitle: "Fullstack Developer Intern",
       description:
-        "Built an entre desktop application using Electron.js to manage the interns' absence and their discipline note and helped with the UI and the auth of the mobile version.",
+        "Developed a full-featured desktop application with Electron.js to manage interns' absences and discipline scores, including data tracking and reporting. Contributed to the mobile version by implementing authentication and enhancing the user interface.",
       logo: istabm,
       bgColor: "bg-cyan-600",
     },
